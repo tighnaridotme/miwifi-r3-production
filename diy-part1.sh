@@ -13,8 +13,6 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 cd package
-git submodule add https://github.com/jerrykuku/luci-theme-argon.git
-git submodule add https://github.com/jerrykuku/luci-app-argon-config.git
 git submodule add https://gitlab.com/Nooblord/luci-app-unlocker.git
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
