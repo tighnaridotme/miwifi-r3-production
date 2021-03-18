@@ -4,22 +4,25 @@
 ![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
 ![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
 
-Build OpenWrt using GitHub Actions
+This repository contains releases of x-wrt for Mi Router 3 (mt7620) | Этот репозиторий содержит релизы x-wrt для Mi Router 3 (mt7620)
 
-[Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
+Установка:
+Получаем доступ по SSH - [гайд](https://4pda.ru/forum/index.php?s=&showtopic=736801&view=findpost&p=49333132)
+Скопировать файлы x-wrt-xxx-kernel1.bin и x-wrt-xxx-rootfs0.bin на флешку, отформатированную в FAT32. Для удобства можно их переименовать в kernel1.bin и rootfs0.bin. Вставить флешку в роутер.
+В консоли вводим:
+nvram set flag_last_success=1
+nvram set boot_wait=on
+nvram set uart_en=1
+nvram commit
+cd /extdisks/sda1
+mtd write kernel1.bin kernel1
+mtd write rootfs0.bin rootfs0
+reboot
+Через несколько минут интерфейс будет доступен по адресу 192.168.15.1
+Последующие обновления файлом x-wrt-xxx-sysupgrade.bin в интерфейсе во вкладке System -> Backup / Flash Firmware -> Flash new firmware image
+В случае неудачи - [возврат на сток через UART](https://4pda.ru/forum/index.php?s=&showtopic=736801&view=findpost&p=50915904).
 
-## Usage
-
-- Click the [Use this template](https://github.com/Aelliari/xwrt_action/generate) button to create a new repository.
-- Generate `.config` files using xwrt source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository. If not use from link, you also may change it, is link dead- use default from x-wrt repo for mt7620
-- Select `Build OpenWrt` on the Actions page.
-- Click the `Run workflow` button.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
-## Tips
-
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
+Guide in English - [how to get ssh access, install x-wrt and so on](https://openwrt.org/toh/xiaomi/mir3#get_sshdropbear_access)
 
 ## Acknowledgments
 
