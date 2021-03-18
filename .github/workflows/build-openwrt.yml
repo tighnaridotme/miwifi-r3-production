@@ -30,7 +30,7 @@ env:
   #if your repo not contain .config, you may download it from direct url setting by ALT_CONFIG_URL variable
   #if ALT_CONFIG_URL commented and repo not contain .config - use default for mt7620
   #.config from repo > .config from url > default .config
-  ALT_CONFIG_URL: https://raw.githubusercontent.com/astolfogit/x-wrt/main/.config
+  ALT_CONFIG_URL: https://raw.githubusercontent.com/astolfogit/xwrt_miwifi-r3_config/main/.config
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
