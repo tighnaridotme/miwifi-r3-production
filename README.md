@@ -28,7 +28,7 @@ mtd write rootfs0.bin rootfs0
 reboot
 
 - Через несколько минут интерфейс будет доступен по адресу 192.168.15.1
-- Последующие обновления файлом x-wrt-xxx-sysupgrade.bin в интерфейсе во вкладке System -> Backup / Flash Firmware -> Flash new firmware image
+- Последующие обновления файлом openwrt-xxx-sysupgrade.bin в интерфейсе во вкладке System -> Backup / Flash Firmware -> Flash new firmware image
 - В случае неудачи - [возврат на сток через UART](https://4pda.ru/forum/index.php?s=&showtopic=736801&view=findpost&p=50915904).
 
 Guide in English - [how to get ssh access, install x-wrt and so on](https://openwrt.org/toh/xiaomi/mir3#get_sshdropbear_access)
