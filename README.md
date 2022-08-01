@@ -6,6 +6,8 @@ This repository contains releases of [X-WRT](https://github.com/x-wrt/x-wrt) for
 
 Guide in English - [how to get ssh access, install X-WRT and so on](https://openwrt.org/toh/xiaomi/mir3#get_sshdropbear_access)
 
+Includes support for PPPoE, WPA3, 3G/4G dongles (e.g. Huawei E3372), USB drives (NTFS, EXT4, exFAT and FAT32 file systems supported) | Включает в себя поддержку PPPoE, WPA3, 3G/4G модемов, USB флешек (NTFS, EXT4, exFAT и FAT32 файловые системы поддерживаются)
+
 Установка:
 - Получаем доступ по SSH - [гайд](https://4pda.to/forum/index.php?s=&showtopic=736801&view=findpost&p=49333132)
 - Скопировать файлы openwrt-xxx-kernel1.bin и openwrt-xxx-rootfs0.bin на флешку, отформатированную в FAT32. Для удобства можно их переименовать в kernel1.bin и rootfs0.bin. Вставить флешку в роутер.
