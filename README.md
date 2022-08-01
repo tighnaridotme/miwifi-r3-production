@@ -33,7 +33,8 @@ reboot
 
 ## Acknowledgments
 
-- [Actions-OpenWrt by P3TERX](https://github.com/P3TERX/Actions-OpenWrt)
+- [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
+- [Aelliari/xwrt_action](https://github.com/Aelliari/xwrt_action)
 - [Microsoft Azure](https://azure.microsoft.com)
 - [GitHub Actions](https://github.com/features/actions)
 - [OpenWrt](https://github.com/openwrt/openwrt)
